@@ -1,5 +1,7 @@
 package com.github.wangxianzhuo.factorio.calculator.model;
 
+import com.github.wangxianzhuo.factorio.calculator.model.factory.Factory;
+import com.github.wangxianzhuo.factorio.calculator.model.material.Material;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,21 +17,19 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 public class Recipe {
-    private int id;
     private String name;
-    private List<IndustrialMaterial> industrialMaterials;
+    private List<Material> materials;
     private double productionTime;
     private double yield;
     private double productionSpeedPerSecond;
-    private ProducerType producerType;
+    private List<Factory> factoryInstances;
 
-    public Recipe(int id, String name, List<IndustrialMaterial> industrialMaterials, double productionTime, double yield, ProducerType producerType) {
-        this.id = id;
+    public Recipe(String name, List<Material> materials, double productionTime, double yield, Factory factory) {
         this.name = name;
-        this.industrialMaterials = industrialMaterials;
+        this.materials = materials;
         this.productionTime = productionTime;
         this.yield = yield;
-        this.producerType = producerType;
+        this.factoryInstances = factory.getFactoryInstances();
         this.productionSpeedPerSecond = yield / productionTime;
     }
 }

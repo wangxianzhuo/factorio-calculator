@@ -1,11 +1,11 @@
 package com.github.wangxianzhuo.factorio.calculator;
 
-import com.github.wangxianzhuo.factorio.calculator.model.BaseMaterial;
+import com.github.wangxianzhuo.factorio.calculator.model.material.RawMaterial;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * description: BaseMaterialSupplyPlan
+ * description: RawMaterialSupplyPlan
  * date: 2021/5/11 14:57
  *
  * @author: shangjie
@@ -13,6 +13,6 @@ import lombok.NoArgsConstructor;
  */
 @NoArgsConstructor
 @Data
-public class BaseMaterialSupplyPlan extends BasePlan {
-    private BaseMaterial baseMaterial;
+public class RawMaterialSupplyPlan extends BasePlan {
+    private RawMaterial rawMaterial;
 }

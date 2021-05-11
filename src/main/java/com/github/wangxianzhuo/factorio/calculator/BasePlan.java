@@ -1,6 +1,6 @@
 package com.github.wangxianzhuo.factorio.calculator;
 
-import com.github.wangxianzhuo.factorio.calculator.model.Factory;
+import com.github.wangxianzhuo.factorio.calculator.model.factory.Factory;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

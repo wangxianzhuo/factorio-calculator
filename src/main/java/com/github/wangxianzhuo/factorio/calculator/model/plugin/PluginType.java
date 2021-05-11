@@ -1,4 +1,4 @@
-package com.github.wangxianzhuo.factorio.calculator.model;
+package com.github.wangxianzhuo.factorio.calculator.model.plugin;
 
 /**
  * description: PluginType
